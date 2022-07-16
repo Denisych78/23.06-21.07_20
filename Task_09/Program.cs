@@ -12,7 +12,7 @@ int secondDigit = rndNum % 10;
 
 int maxDigit = firstDigit;
 if (secondDigit > maxDigit) maxDigit = secondDigit;
-else maxDigit = 0;
+else if (secondDigit == maxDigit) maxDigit = 0;
 
-if (maxDigit > 0) Console.WriteLine($"Наибольшая цифра числа {rndNum} => {secondDigit}");
+if (maxDigit > 0) Console.WriteLine($"Наибольшая цифра числа {rndNum} => {maxDigit}");
 else Console.WriteLine($"Цифры числа {rndNum} равны");
