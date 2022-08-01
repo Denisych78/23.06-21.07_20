@@ -13,7 +13,7 @@ int numC = Convert.ToInt32(Console.ReadLine());
 
 void Suma(int a, int b, int c)
 {
-    if (a < b + c || b < a + c || c < a + b) Console.WriteLine("Треугольник существует");
+    if (a < b + c && b < a + c && c < a + b) Console.WriteLine("Треугольник существует");
     else Console.WriteLine("Треугольник не существует");
 }
 
