@@ -6,6 +6,7 @@
 // А (7,-5); В (1, -1) -> 7,21
 
 Console.Clear();
+
 Console.WriteLine("Введите координаты точки А: ");
 Console.Write("xA: ");
 int xA = Convert.ToInt32(Console.ReadLine());
